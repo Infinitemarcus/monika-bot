@@ -1,6 +1,7 @@
 <html lang='pt-br'>
     <head>
         <title>Monika bot</title>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="assets/img/favicon.ico"/>
         <link rel="stylesheet" href="assets/css/style.css"/>
@@ -19,6 +20,15 @@
                 <li><a href="#futuro">Futuro</a></li>
                 <li><a href="#imagens">Imagens</a></li>
             </ul>
+            <div class="dropdown">
+                <div onclick="myFunction()" style="z-index:9999"><a onclick="myFunction()" class="dropbtn"><img class="drop-image" src="assets/img/menu.png" onclick="myFunction()"></a></div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#comandos">Comandos</a>
+                    <a href="#futuro">Futuro</a>
+                    <a href="#imagens">Imagens</a>
+                </div>
+            </div>
         </header>
         <div id="spacer"> </div>
         <main>
@@ -26,17 +36,17 @@
             <div class="content">
                 <h1><span id="sobre"></span>Sobre o projeto</h1>
                 <div class="content-block">
-                    <div class="text-block">
+                    <div class="text-block align">
                         <p>Este site fornece mais detalhes sobre a Monika, o bot para Discord do HackoonSpace!</p>
                     
                         <p>Aqui você vai aprender mais sobre quem ela é e o que ela pode (e poderá) fazer, além de ver algumas imagens da dita cuja.</p>
                     </div>
-                    <a href="assets/img/img/img1.jpg" target="_blank" rel="noreferrer noopener"><img width="250px" src="assets/img/img1.jpg"></a>
+                    <a class="align" href="assets/img/img/img1.jpg" target="_blank" rel="noreferrer noopener"><img src="assets/img/img1.jpg"></a>
                 </div>
                 <h1><span id="comandos"></span>Comandos</h1>
                 <div class="content-block">
-                    <a href="assets/img/img/img3.png" target="_blank" rel="noreferrer noopener"><img width="350px" src="assets/img/img3.png"></a>
-                    <div class="text-block">
+                    <a class="align" href="assets/img/img/img3.png" target="_blank" rel="noreferrer noopener"><img src="assets/img/img3.png"></a>
+                    <div class="text-block align">
                         <p>Os comandos da Monika se dividem nas seguintes categorias:</p>
                         <ul id="features">
                             <li>Sobre</li>
@@ -52,7 +62,7 @@
                 </div>
                 <h1><span id="futuro"></span>Futuro do projeto</h1>
                 <div class="content-block">
-                    <div class="text-block">
+                    <div class="text-block align">
                         <p>Aqui está uma lista das próximas novidades a serem implementadas na/para a Monika:</p>
                         <ul id="future-features">
                             <li>Mais interações aqui neste site</li>
@@ -61,7 +71,7 @@
                             <li>Novas interações comigo</li>
                         </ul>
                     </div>
-                    <a href="assets/img/img/chibi.png" target="_blank" rel="noreferrer noopener"><img width="250px" class="sticker" src="assets/img/chibi.png"></a>
+                    <a class="align" ref="assets/img/img/chibi.png" target="_blank" rel="noreferrer noopener"><img  class="sticker" src="assets/img/chibi.png"></a>
                 </div>
                 <h1><span id="imagens"></span>Imagens</h1>
                 <div class="content-block">

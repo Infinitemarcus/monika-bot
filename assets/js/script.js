@@ -35,11 +35,24 @@ jQuery(function($) {
 	});
 });
 
-$(window).resize(function() {
-  alert("Ta tentando mudar a resolução da tela, né?");
-});
-
 $('.logo').on('click', function (){
   var audio = new Audio('assets/audio/main.mp3');
   audio.play();
 });
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn') && !event.target.matches('.drop-image')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
